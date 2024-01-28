@@ -50,7 +50,7 @@ const Details = () => {
             </GridItem>
             <GridItem colSpan={2}>
               <FormControl>
-                <Button width="full" size='lg'>Place Items</Button>
+                <Button width="full" bg='brand.100' size='lg'>Place Items</Button>
               </FormControl>
             </GridItem>
             

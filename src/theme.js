@@ -1,8 +1,14 @@
 import { extendTheme, theme as base } from "@chakra-ui/react";
-const theme = extendTheme({
+const theme = extendTheme(
+    {
+       colors: {
+        brand: {
+            100:"#65a30d"
+        }
+       },
 fonts: {
-    heading: `Monstserrat, $(base.fonts.heading)`,
-    body:
+    heading: `Montserrat, ${base.fonts.heading}`,
+    body:"Inter"
 }
 });
 export default  theme;
