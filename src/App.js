@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import Details from './Components/Details';
+import Cart from './Components/Cart';
+import '@chakra-ui/react';
+import { AspectRatio, Button, Container, Flex, FormControl, FormLabel, GridItem, HStack, Heading, Input,Image, Select, SimpleGrid, Text, VStack, Checkbox, Divider } from '@chakra-ui/react';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="container.xl" p="10"  >
+      <Flex h="100vh" p="20" >
+        <Details/>
+        <Cart/>
+      </Flex>
+
+    </Container>
   );
 }
 
