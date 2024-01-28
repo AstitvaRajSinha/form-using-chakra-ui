@@ -7,7 +7,12 @@ import { AspectRatio, Button, Container, Flex, FormControl, FormLabel, GridItem,
 function App() {
   return (
     <Container maxWidth="container.xl" p="10"  >
-      <Flex h="100vh" p="20" >
+      <Flex h={{
+        base:"auto", md:"100vh"
+      }} py={[0,10,20]} flexWrap={{
+        base: "wrap-reverse",
+        md :"nowrap"
+      }} >
         <Details/>
         <Cart/>
       </Flex>
